@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class IOCTest {
     public static void main(String[] args){
-        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
         HelloIOC helloIOC = (HelloIOC) context.getBean("helloIOC");
         helloIOC.getMsg();
     }
